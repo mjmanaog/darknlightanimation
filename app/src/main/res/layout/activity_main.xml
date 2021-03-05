@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000B0F"
+    app:layoutDescription="@xml/activity_main_scene">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+    <ImageView
+        android:id="@+id/ivCloud1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCloud2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_cloud_dark" />
+
+    <ImageView
+        android:id="@+id/ivCloud2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cloud_light" />
+
+    <ImageView
+        android:id="@+id/ivMoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_moon" />
+
+    <ImageView
+        android:id="@+id/ivBuilding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_building" />
+
+    <ImageView
+        android:id="@+id/ivCloud3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cloud_dark" />
+
+    <ImageView
+        android:id="@+id/ivCloud4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCloud6"
+        app:srcCompat="@drawable/ic_cloud_light" />
+
+    <ImageView
+        android:id="@+id/ivCloud5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCloud4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_cloud_dark" />
+
+    <ImageView
+        android:id="@+id/ivCloud6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCloud3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_cloud_light" />
+
+    <TextView
+        android:id="@+id/tvDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dark"
+        android:textColor="#FFFFFF"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/tvLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="light"
+        android:textColor="#2F2F2F"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/tvMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="mode"
+        android:textColor="#FFFFFF"
+        android:textSize="80sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLightMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="mode"
+        android:textColor="#2F2F2F"
+        android:textSize="80sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tvSun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_sun"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="357dp" />
+
+    <ImageView
+        android:id="@+id/tvMountain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_mountain"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="494dp" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
